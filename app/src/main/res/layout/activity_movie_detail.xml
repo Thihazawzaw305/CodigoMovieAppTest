@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".activities.MovieDetailActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivDetailCover"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/placeholder_movie"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.BottomConor"
+        android:scaleType="centerCrop"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:src="@drawable/ic_back" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDetailName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivDetailCover"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_marginBottom="@dimen/margin_medium_2"
+        android:text="Frozen"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="November 20, 2021"
+        android:layout_below="@id/tvDetailName"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_regular"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/detailFavouriteLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:layout_below="@id/ivDetailCover"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivFavourite"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/ic_favourite"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:text="89%"/>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvVote"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="210,453 votes"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_below="@id/detailFavouriteLayout"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_regular"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMovieDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Description"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:layout_below="@id/tvDate"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_regular"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMovieDescriptionDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="It’s still a dazzling spectacle that the film’s legions of kiddie fans will love. But adults will note that it’s more serious, sadder and wiser than the film. Some New York critics didn’t seem to be entirely happy with this when it opened on Broadway in 2018, criticising it for being dour. But I liked Grandage’s more melancholy spin, which is written by the film’s screenwriter and director Jennifer Lee, with new songs (and old songs) from the film’s songwriters Kristen Anderson-Lopez and Robert Lopez. To be clear, the talking snowman and the goofy reindeer are still in it, but it does land a bit differently. "
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvMovieDescription"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:textSize="@dimen/text_regular"
+        />
+
+
+
+
+
+
+</RelativeLayout>
